@@ -10,4 +10,4 @@ jobs:
           name: Run Tests
           command: |
             sudo pip install pytest
-            pytest --rootdir=~/repo
+            pytest
