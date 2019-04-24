@@ -28,3 +28,8 @@ def test_six_divided_by_two_should_equal_to_three():
 
 def test_six_divided_by_two_plus_one_should_equal_to_four():
     assert cal.calculate("6 / 2 + 1") == 4
+
+
+def test_six_divided_by_the_result_of_two_plus_one_should_equal_to_two():
+    assert cal.calculate("6 / (2 + 1)") == 2
+
