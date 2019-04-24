@@ -24,3 +24,7 @@ def test_five_minus_two_should_equal_to_three():
 
 def test_six_divided_by_two_should_equal_to_three():
     assert cal.calculate("6 / 2") == 3
+
+
+def test_six_divided_by_two_plus_one_should_equal_to_four():
+    assert cal.calculate("6 / 2 + 1") == 4
