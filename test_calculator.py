@@ -9,5 +9,11 @@ def test_one_number_should_equal_to_itself():
 def test_one_plus_two_should_equal_to_three():
     assert cal.calculate("1+2") == 3
 
+
 def test_one_plus_two_with_parentheses_should_equal_to_three():
     assert cal.calculate("(1+2)") == 3
+
+
+def test_two_times_three_should_equal_to_six():
+    assert cal.calculate("2 * 3") == 6
+
