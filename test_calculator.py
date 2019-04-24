@@ -36,3 +36,7 @@ def test_six_divided_by_the_result_of_two_plus_one_should_equal_to_two():
 
 def test_six_times_the_result_of_two_plus_one_should_equal_to_eighteen():
     assert cal.calculate("6 * (2 + 1)") == 18
+
+
+def test_the_result_of_two_plus_one_times_the_result_of_five_minus_two_should_equal_to_nine():
+    assert cal.calculate("(2 + 1) * (5 - 2)") == 9
