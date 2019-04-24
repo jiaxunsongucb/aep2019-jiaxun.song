@@ -5,8 +5,26 @@ jobs:
       - image: circleci/python:3.6.1
     steps:
       - checkout
+
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+            - install-pytest
+
+      - run:
+          name: Install Dependencies
+          command: |
+            python3 -m venv venv
+            . venv/bin/activate
+            pip install pytest
+
+      - save_cache:
+          paths:
+            - ./venv
+          key: install-pytest
+
       - run:
           name: Run Tests
           command: |
-            sudo pip install pytest
+            . venv/bin/activate
             pytest
